@@ -14,8 +14,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      padding: 2rem;
       text-align: center;
     }
 
@@ -44,15 +43,46 @@
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      margin-top: 2rem;
     }
 
     .cta-button:hover {
       background-color: #e0f7f1;
     }
 
+    .form-section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .form-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .radio-group, .search-bar {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      margin-right: 1rem;
+      display: inline-block;
+    }
+
+    input[type="text"] {
+      padding: 0.5rem;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 6px;
+      border: none;
+    }
+
     footer {
-      position: absolute;
-      bottom: 1rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
       opacity: 0.7;
     }
@@ -62,8 +92,228 @@
   <header>
     <h1>PsySafe</h1>
     <p>Check for potential interactions between psychedelics and prescription medications—quickly, safely, and anonymously.</p>
-    <button class="cta-button" onclick="window.location.href='https://your-app-link.com'">Start Interaction Check</button>
   </header>
+
+  <section class="form-section">
+    <h2>Select a Psychedelic:</h2>
+    <div class="radio-group">
+      <label><input type="radio" name="psychedelic" value="LSD"> LSD</label>
+      <label><input type="radio" name="psychedelic" value="Psilocybin"> Psilocybin</label>
+      <label><input type="radio" name="psychedelic" value="DMT"> DMT</label>
+      <label><input type="radio" name="psychedelic" value="Mescaline"> Mescaline</label>
+      <label><input type="radio" name="psychedelic" value="MDMA"> MDMA</label>
+      <label><input type="radio" name="psychedelic" value="Ketamine"> Ketamine</label>
+      <label><input type="radio" name="psychedelic" value="Ayahuasca"> Ayahuasca</label>
+    </div>
+
+    <h2>Search for a Prescription Medication:</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Search medication name..." list="medications">
+      <datalist id="medications">
+        <option value="Atorvastatin">
+        <option value="Metformin">
+        <option value="Lisinopril">
+        <option value="Levothyroxine">
+        <option value="Amlodipine">
+        <option value="Metoprolol">
+        <option value="Albuterol">
+        <option value="Losartan">
+        <option value="Omeprazole">
+        <option value="Gabapentin">
+        <option value="Sertraline">
+        <option value="Hydrochlorothiazide">
+        <option value="Rosuvastatin">
+        <option value="Dextroamphetamine; Dextroamphetamine Saccharate; Amphetamine; Amphetamine Aspartate">
+        <option value="Escitalopram">
+        <option value="Pantoprazole">
+        <option value="Montelukast">
+        <option value="Trazodone">
+        <option value="Simvastatin">
+        <option value="Tamsulosin">
+        <option value="Bupropion">
+        <option value="Fluoxetine">
+        <option value="Acetaminophen; Hydrocodone">
+        <option value="Furosemide">
+        <option value="Fluticasone">
+        <option value="Amoxicillin">
+        <option value="Apixaban">
+        <option value="Insulin Glargine">
+        <option value="Meloxicam">
+        <option value="Prednisone">
+        <option value="Duloxetine">
+        <option value="Methylphenidate">
+        <option value="Ibuprofen">
+        <option value="Carvedilol">
+        <option value="Potassium Chloride">
+        <option value="Aspirin">
+        <option value="Pravastatin">
+        <option value="Ergocalciferol">
+        <option value="Allopurinol">
+        <option value="Citalopram">
+        <option value="Alprazolam">
+        <option value="Glipizide">
+        <option value="Cetirizine">
+        <option value="Venlafaxine">
+        <option value="Cyclobenzaprine">
+        <option value="Hydroxyzine">
+        <option value="Clopidogrel">
+        <option value="Semaglutide">
+        <option value="Famotidine">
+        <option value="Estradiol">
+        <option value="Diclofenac">
+        <option value="Spironolactone">
+        <option value="Hydrochlorothiazide; Lisinopril">
+        <option value="Buspirone">
+        <option value="Tramadol">
+        <option value="Empagliflozin">
+        <option value="Clonazepam">
+        <option value="Lamotrigine">
+        <option value="Fluticasone; Salmeterol">
+        <option value="Oxycodone">
+        <option value="Ondansetron">
+        <option value="Cholecalciferol">
+        <option value="Atenolol">
+        <option value="Glimepiride">
+        <option value="Folic Acid">
+        <option value="Zolpidem">
+        <option value="Latanoprost">
+        <option value="Doxycycline">
+        <option value="Lisdexamfetamine">
+        <option value="Insulin Lispro">
+        <option value="Clonidine">
+        <option value="Loratadine">
+        <option value="Finasteride">
+        <option value="Dulaglutide">
+        <option value="Hydrochlorothiazide; Losartan">
+        <option value="Insulin Aspart">
+        <option value="Propranolol">
+        <option value="Azithromycin">
+        <option value="Ezetimibe">
+        <option value="Ethinyl Estradiol; Norethindrone">
+        <option value="Lorazepam">
+        <option value="Quetiapine">
+        <option value="Budesonide; Formoterol">
+        <option value="Topiramate">
+        <option value="Warfarin">
+        <option value="Sitagliptin">
+        <option value="Amitriptyline">
+        <option value="Fenofibrate">
+        <option value="Naproxen">
+        <option value="Rivaroxaban">
+        <option value="Pregabalin">
+        <option value="Paroxetine">
+        <option value="Celecoxib">
+        <option value="Tizanidine">
+        <option value="Sumatriptan">
+        <option value="Amoxicillin; Clavulanate">
+        <option value="Olmesartan">
+        <option value="Acetaminophen; Oxycodone">
+        <option value="Ethinyl Estradiol; Norgestimate">
+        <option value="Diltiazem">
+        <option value="Cephalexin">
+        <option value="Triamcinolone">
+        <option value="Alendronate">
+        <option value="Baclofen">
+        <option value="Mirtazapine">
+        <option value="Aripiprazole">
+        <option value="Ferrous Sulfate">
+        <option value="Chlorthalidone">
+        <option value="Dexmethylphenidate">
+        <option value="Oxybutynin">
+        <option value="Lovastatin">
+        <option value="Hydroxychloroquine">
+        <option value="Valacyclovir">
+        <option value="Acetaminophen">
+        <option value="Dapagliflozin">
+        <option value="Hydrochlorothiazide; Triamterene">
+        <option value="Valsartan">
+        <option value="Testosterone">
+        <option value="Isosorbide">
+        <option value="Pioglitazone">
+        <option value="Hydralazine">
+        <option value="Esomeprazole">
+        <option value="Levetiracetam">
+        <option value="Azelastine">
+        <option value="Progesterone">
+        <option value="Methocarbamol">
+        <option value="Insulin Detemir">
+        <option value="Ethinyl Estradiol; Levonorgestrel">
+        <option value="Meclizine">
+        <option value="Benzonatate">
+        <option value="Cyanocobalamin">
+        <option value="Methotrexate">
+        <option value="Metronidazole">
+        <option value="Acyclovir">
+        <option value="Norethindrone">
+        <option value="Prednisolone">
+        <option value="Thyroid">
+        <option value="Insulin Degludec">
+        <option value="Liraglutide">
+        <option value="Morphine">
+        <option value="Enalapril">
+        <option value="Drospirenone; Ethinyl Estradiol">
+        <option value="Sulfamethoxazole; Trimethoprim">
+        <option value="Fluticasone; Umeclidinium; Vilanterol">
+        <option value="Fluticasone; Vilanterol">
+        <option value="Donepezil">
+        <option value="Clindamycin">
+        <option value="Docusate">
+        <option value="Phentermine">
+        <option value="Memantine">
+        <option value="Nifedipine">
+        <option value="Levocetirizine">
+        <option value="Methylprednisolone">
+        <option value="Tiotropium">
+        <option value="Timolol">
+        <option value="Clobetasol">
+        <option value="Sildenafil">
+        <option value="Nitrofurantoin">
+        <option value="Benazepril">
+        <option value="Fluconazole">
+        <option value="Desogestrel; Ethinyl Estradiol">
+        <option value="Mupirocin">
+        <option value="Ropinirole">
+        <option value="Nirmatrelvir; Ritonavir">
+        <option value="Sacubitril; Valsartan">
+        <option value="Acetaminophen; Codeine">
+        <option value="Oxcarbazepine">
+        <option value="Cefdinir">
+        <option value="Diazepam">
+        <option value="Amlodipine; Benazepril">
+        <option value="Olanzapine">
+        <option value="Tadalafil">
+        <option value="Nebivolol">
+        <option value="Valproate">
+        <option value="Ketoconazole">
+        <option value="Dicyclomine">
+        <option value="Budesonide">
+        <option value="Albuterol; Ipratropium">
+        <option value="Anastrozole">
+        <option value="Doxazosin">
+        <option value="Ciprofloxacin">
+        <option value="Metformin; Sitagliptin">
+        <option value="Risperidone">
+        <option value="Torsemide">
+        <option value="Cyclosporine">
+        <option value="Dexlansoprazole">
+        <option value="Ramipril">
+        <option value="Verapamil">
+        <option value="Linaclotide">
+        <option value="Rizatriptan">
+        <option value="Nortriptyline">
+        <option value="Insulin Human; Insulin Isophane Human">
+        <option value="Pramipexole">
+        <option value="Ethinyl Estradiol; Etonogestrel">
+        <option value="Bimatoprost">
+        <option value="Nitroglycerin">
+        <option value="Colchicine">
+        <option value="Promethazine">
+        <option value="Brimonidine">
+        <option value="Irbesartan">
+      </datalist>
+    </div>
+    <button class="cta-button">Check Interaction</button>
+  </section>
 
   <footer>
     &copy; 2025 PsySafe. For informational purposes only. Always consult your doctor.
